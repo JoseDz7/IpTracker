@@ -1,0 +1,116 @@
+#!bin/bash
+# Creado por: Sharkcode || la idea principal fue de (Monkeyhk4) Lo unico que hice fue crear una version mas detallada y con mejores funciones para un mejor uso del usuario..
+
+# IpCorporation ~~ PR1V4T3 UND3RC0N ~~ JOSE DIAZ (10/SEP/2021) (9:55PM)
+
+#CODIGO LIBRE
+
+# ===============================================
+#               COLORES RESALTADOS :D
+# ===============================================
+negro="\e[1;30m"
+azul="\e[1;34m"
+verde="\e[1;32m"
+cian="\e[1;36m"
+rojo="\e[1;31m"
+purpura="\e[1;35m"
+amarillo="\e[1;33m"
+blanco="\e[1;37m"
+# ===============================================
+#                 COLORES BAJOS
+# ===============================================
+black="\e[0;30m"
+blue="\e[0;34m"
+green="\e[0;32m"
+cyan="\e[0;36m"
+red="\e[0;31m"
+purple="\e[0;35m"
+yellow="\e[0;33m"
+white="\e[0;37m"
+#                BANNER DE TEXTO.. :D
+
+BannerIp(){
+	sleep 0.5
+	clear
+echo -e "
+< ═══════════════ [x] ⍣᭕ᬁ᭖sharkcode᭖᭕ᬁ⍣ [x] ═══════════════ >
+
+ ████████╗██████╗  █████╗  ██████╗██╗  ██╗███████╗██████╗ 
+ ╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝██╔════╝██╔══██╗
+    ██║   ██████╔╝███████║██║     █████╔╝ █████╗  ██████╔╝
+    ██║   ██╔══██╗██╔══██║██║     ██╔═██╗ ██╔══╝  ██╔══██╗
+    ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗███████╗██║  ██║
+    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+
+< ═══════════════ [x] ⍣᭕ᬁ᭖sharkcode᭖᭕ᬁ⍣ [x] ═══════════════ >
+" | lolcat
+}
+
+TuIp(){
+	curl -s http://ip-api.com/
+	echo ""
+	sleep 3
+echo -e -n "${rojo}
+${rojo}[${blanco} :D ${rojo}]${rojo} >>>${blanco} Presione ENTER para continuar${rojo} :)
+
+${rojo}[${blanco} >> ${rojo}]${rojo} >>>" ${blanco}
+read $ENTER
+bash IpTracker
+}
+
+
+IpAtack(){
+	BannerIp
+	echo ""
+echo -e -n "${rojo}
+${rojo}[${blanco} :D ${rojo}]${rojo} >>>${blanco} Escribe una ip${rojo} :)
+
+${rojo}[${blanco} >> ${rojo}]${rojo} >>>" ${blanco}
+read -r Ip
+curl -s http://ip-api.com/$Ip
+sleep 3
+echo -e -n "${rojo}
+${rojo}[${blanco} :D ${rojo}]${rojo} >>>${blanco} Presione ENTER para continuar${rojo} :)
+
+${rojo}[${blanco} >> ${rojo}]${rojo} >>>" ${blanco}
+read $ENTER
+bash IpTracker
+}
+
+
+MenuV1(){
+	sleep 0.5
+	BannerIp
+echo -e "${rojo}[${blanco} ¿? ${rojo}]${rojo} >>> ${blanco}MENU V1 PRIMERA VERSION"
+echo ""
+echo -e "${rojo}[${blanco} 01 ${rojo}]${rojo} >>> ${blanco}¿Cúal es mi ip?${verde} >>${blanco} Info. de tu IP(Publica)${rojo} :)"
+echo -e "${rojo}[${blanco} 02 ${rojo}]${rojo} >>> ${blanco}Extraer info. de una ip.${rojo} :)"
+echo ""
+echo -e "${rojo}[${blanco} 05 ${rojo}]${rojo} >>> ${blanco}Salir${rojo} :("
+echo -e -n "${rojo}
+${rojo}[${blanco} :D ${rojo}]${rojo} >>>${blanco} Escribe una opcion${rojo} :)
+
+${rojo}[${blanco} >> ${rojo}]${rojo} >>>" ${blanco}
+read -r OPTION
+
+if [[ "${OPTION}" == "1" || "${OPTION}" == "01" ]]; then
+	TuIp
+elif [[ "${OPTION}" == "2" || "${OPTION}" == "02" ]]; then
+	IpAtack
+elif [[ "${OPTION}" == "5" || "${OPTION}" == "05" ]]; then
+		clear
+figlet Adios.. | lolcat
+echo -e "${verde} Gracias por ocupar mi script adios !!
+te amo <3 atte. Sharkcode"
+          sleep 3
+          exit
+else
+echo -e "${rojo}
+OPCIÓN INCORRECTA" 
+	sleep 2
+	MenuV1
+fi
+}
+MenuV1
+
+
