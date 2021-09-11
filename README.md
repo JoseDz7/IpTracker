@@ -26,8 +26,7 @@ Funcionando para termux, Kali Linux y parrot security.
 * `chmod +x *`
 * `bash IpTracker or ./IpTracker`
 
-* `El readme es idea de julio'
 
 ***CUALQUIER ERROR O DUDA ESCRIBIRNE A MI NÚMERO =***
 
-***+52 2283821202***
+***+52 2283821202😈🥵***
