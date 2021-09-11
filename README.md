@@ -7,8 +7,8 @@ Un pequeño script pero poderoso el cual optiene información de una IP
 ![Image text](https://github.com/piratainformatico2/IpTracker/blob/main/Screenshot_20210911-105556.png)
 
 
-### passWordFusk :
-* **PassWord**.
+### IpTracker :
+* **IpTrackerV1**.
 * Contenido, código, diseño y demás, pertenecen plena y totalmente a mí :sunglasses:
 - > ` By: ⍣᭕ᬁ᭖sharkcode᭖᭕ᬁ⍣ `
 
