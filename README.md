@@ -21,7 +21,13 @@ Funcionando para termux, Kali Linux y parrot security.
 * `apt update && apt upgrade -y`
 
 * `gem install lolcat`
-* `git clone https://github.com/piratainformatico2/passWordFusk`
+* `git clone https://github.com/piratainformatico2/IpTracker`
 * `cd IpTracker`                                                    
 * `chmod +x *`
 * `bash IpTracker or ./IpTracker`
+
+* `El readme es idea de julio'
+
+***CUALQUIER ERROR O DUDA ESCRIBIRNE A MI NÚMERO =***
+
+***+52 2283821202***
